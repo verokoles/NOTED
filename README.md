@@ -5,6 +5,7 @@
 To create an app accessable to anyone who wants to
 keep track of tasks by adding, saving, and deleting tasks.
 <br>
+<br>
 "AS A small business owner <br>
 I WANT to be able to write and save notes <br>
 SO THAT I can organize my thoughts 
@@ -44,7 +45,7 @@ and keep track of tasks I need to complete"
 
      Apache-2.0 
 
-     [Link to Apache-2.0 license](https://opensource.org/licenses/Apache-2.0)
+   [Link to Apache-2.0 license](https://opensource.org/licenses/Apache-2.0)
 
 
   
