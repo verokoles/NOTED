@@ -2,20 +2,23 @@
 <html lang="en">
 
 <head>
+    <title>NOTED</title>
+    <link rel="icon" type="image/x-icon" href="images/pen.png">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>NOTED</title>
+ 
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
     crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.1.3/flatly/bootstrap.min.css" />
-  <link rel="stylesheet" href="assets/style.css">
+  <link rel="stylesheet" href="public/assets/style.css">
 </head>
-
+<!-- header -->
 <body>
   <nav class="navbar navbar-dark bg-dark">
     <a class="navbar-brand" href="/">N O T E D
     </a>
+    <!-- save and add icons -->
     <div class="icons">
       <i class="fas fa-save text-light save-note"></i>
       <i class="fas fa-pen text-light new-note"></i>
@@ -29,14 +32,16 @@
           </ul>
         </div>
       </div>
+      <!-- typung in notes input -->
       <div class="col-8">
         <input class="note-title" placeholder="Note Title" maxlength="30" type="text">
         <textarea class="note-textarea" placeholder="Note Description"></textarea>
       </div>
     </div>
   </div>
+
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="assets/index.js"></script>
 </body>
-
 </html>
