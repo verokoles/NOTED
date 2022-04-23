@@ -1,4 +1,4 @@
-# NOTED::ballpoint-pen: 
+# NOTED:pen: 
 
   [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 ## Purpose
@@ -10,6 +10,9 @@ I WANT to be able to write and save notes <br>
 SO THAT I can organize my thoughts 
 <br>
 and keep track of tasks I need to complete"
+
+![SCREENSHOT OF 'NOTED' FRONT PAGE](noted-first-page.png)
+![SCREENSHOT OF notes created]()
 
    ## Table of Contents::mag:
    1. [ Installation ](#installation)
