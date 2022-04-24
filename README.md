@@ -56,7 +56,7 @@ and keep track of tasks I need to complete"
    Please be kind and professional when adding to or accessing this repository. Thank you!
   [More on Contribution Guidelines](https://github.com/verokoles/readme-generator/blob/f57cf6a98bf276960885496059df4b039247c985/contributing.md)
   
-   ## Heroku:
+   ## Heroku:heavy_plus_sign:
    See my repo deployed to [Heroku.com](https://mighty-sea-96505.herokuapp.com/)
 
 
