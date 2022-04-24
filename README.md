@@ -4,12 +4,11 @@
 ## Purpose
 To create an app accessable to anyone who wants to
 keep track of tasks by adding, saving, and tracking tasks.
-<br>
-<br>
+
 "AS A small business owner <br>
 I WANT to be able to write and save notes <br>
 SO THAT I can organize my thoughts 
-<br>
+
 and keep track of tasks I need to complete"
 
 ![SCREENSHOT OF 'NOTED' FRONT PAGE](images/noted-first-page.png)
@@ -35,9 +34,9 @@ and keep track of tasks I need to complete"
      ```
      npm i heroku, (as well as) $heroku update 
      ```
-     <br>
+     
      In addition to running installation, the server.js was run with 'node server' to GET, POST and delete API calls. These routes called for the data and returned  json to the body and wrote into the database.
-     <br>
+    
     The HTML routes called for the GET requests to index.html and notes.html. Index.js created all the functions, query selectors and calls for adding, saving, and deleting new notes. It also handles saving and deleting the notes by the buttons and thier corresponding icon in top right of the notes.html page.
 
    ## Usage:
