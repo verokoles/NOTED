@@ -22,7 +22,6 @@ function writeData(notes){
 
     // POST to add new notes
     app.post("/api/notes", function(req, res){
-// using uuid from command line install for unique ids
         if (getNotes.length == 0){
             req.body.id = "0";
         } else{
