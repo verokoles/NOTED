@@ -12,7 +12,7 @@ SO THAT I can organize my thoughts
 <br>
 and keep track of tasks I need to complete"
 
-![SCREENSHOT OF 'NOTED' FRONT PAGE](public/assets/images/noted-first-page.png)
+![SCREENSHOT OF 'NOTED' FRONT PAGE](public/images/noted-first-page.png)
 ![SCREENSHOT OF notes created]()
 
    ## Table of Contents::mag:
@@ -34,6 +34,9 @@ and keep track of tasks I need to complete"
      ```
      ```
      npm i inquirer
+     ```
+     ```
+     npm i heroku
      ```
 
    ## Usage:

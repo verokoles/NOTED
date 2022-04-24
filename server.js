@@ -1,10 +1,11 @@
 const express = require('express');
+const path = require("path");
 const app = express();
 const PORT = process.env.PORT || 3000;
 
 //routes ofr API and HTML
-require(routes/apiRoutes.js)(app);
-require(routes/htmlRoutes.js)(app);
+require('./routes/apiRoutes.js')(app);
+require('./routes/htmlRoutes.js')(app);
 
 //EXPRESS calls to handle data
 app.use(express.urlencoded({ extended: true }));
