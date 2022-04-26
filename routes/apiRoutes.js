@@ -38,7 +38,7 @@ function writeData(notes){
         });
         console.log(getNotes);
 // response.json shows new note
-        // res.json(req.body);
+        res.json(req.body);
     });
 
     // DELETE  request to delte note
