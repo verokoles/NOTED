@@ -28,7 +28,7 @@ function writeData(notes){
         //     req.body.id = JSON.stringify(JSON.parse(getNotes[getNotes.length - 1].id) + 1);
         // }
         console.log("req.body.id: " + req.body.id);
-// push json to the body and write into database
+    // push json to the body and write into database
         getNotes.push(req.body);
         writeToDB();
         console.log(getNotes);
@@ -41,6 +41,7 @@ function writeData(notes){
             return true;
         });
     }
+  
 
     // DELETE  request to delte note
     app.delete("/api/notes/:id", function(req, res){
@@ -59,4 +60,5 @@ function writeData(notes){
         //final call to write notes in database
         writeData(getNotes);
     });
+    
 };
