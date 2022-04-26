@@ -30,11 +30,17 @@ function writeData(notes){
         console.log("req.body.id: " + req.body.id);
 // push json to the body and write into database
         getNotes.push(req.body);
-        writeToDB(getNotes);
+        writeToDB();
         console.log(getNotes);
 // response.json shows new note
         res.json(req.body);
     });
+    function writeToDB() {
+        fs.writeFile("../db/db.json", JSON.stringify(getNotes, '\t'), err => {
+            if (err) throw error;
+            return true;
+        }
+    }
 
     // DELETE  request to delte note
     app.delete("/api/notes/:id", function(req, res){
