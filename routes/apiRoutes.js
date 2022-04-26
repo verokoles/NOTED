@@ -39,7 +39,7 @@ function writeData(notes){
         fs.writeFile("../db/db.json", JSON.stringify(getNotes, '\t'), err => {
             if (err) throw error;
             return true;
-        }
+        });
     }
 
     // DELETE  request to delte note
