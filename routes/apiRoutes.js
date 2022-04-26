@@ -30,7 +30,12 @@ function writeData(notes){
         // console.log("req.body.id: " + req.body.id);
 // push json to the body and write into database
         getNotes.push(req.body);
-        updateDb();
+        //write getnotes to the db.json file, must return true
+        fs.writeFile("../db/db.json", JSON.stringify(getNotes, '\t'), error => {
+            if (error) throw error
+            return true;
+            }
+        });
         console.log(getNotes);
 // response.json shows new note
         // res.json(req.body);
