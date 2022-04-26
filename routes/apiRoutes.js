@@ -22,11 +22,11 @@ function writeData(notes){
 
     // POST to add new notes
     app.post("/api/notes", function(req, res){
-        if (getNotes.length == 0){
-            req.body.id = "0";
-        } else{
-            req.body.id = JSON.stringify(JSON.parse(getNotes[getNotes.length - 1].id) + 1);
-        }
+        // if (getNotes.length == 0){
+        //     req.body.id = "0";
+        // } else{
+        //     req.body.id = JSON.stringify(JSON.parse(getNotes[getNotes.length - 1].id) + 1);
+        // }
         console.log("req.body.id: " + req.body.id);
 // push json to the body and write into database
         getNotes.push(req.body);
