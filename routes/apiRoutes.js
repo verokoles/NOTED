@@ -27,13 +27,13 @@ function writeData(notes){
         // } else{
         //     req.body.id = JSON.stringify(JSON.parse(getNotes[getNotes.length - 1].id) + 1);
         // }
-        console.log("req.body.id: " + req.body.id);
+        // console.log("req.body.id: " + req.body.id);
 // push json to the body and write into database
         getNotes.push(req.body);
-        writeToDB(getNotes);
+        updateDb();
         console.log(getNotes);
 // response.json shows new note
-        res.json(req.body);
+        // res.json(req.body);
     });
 
     // DELETE  request to delte note
