@@ -1,6 +1,9 @@
 
 const fs = require("fs");
+const path = require("path");
 const getNotes = require("../db/db.json");
+
+console.log(process.pid);
 
 
 module.exports = function (app) {
@@ -25,9 +28,13 @@ module.exports = function (app) {
         if (getNotes.length == 0) {
             req.body.id = "0";
         } else {
-            req.body.id = JSON.stringify(JSON.parse(getNotes[getNotes.length - 1].id) + 1);
+            const lastItemIndex = getNotes.length - 1;
+            const lastItem = getNotes[lastItemIndex];
+            const newId = JSON.parse(lastItem.id) +  1;
+            req.body.id = JSON.stringify(newId);
         }
         console.log("req.body.id: " + req.body.id);
+        // add "id" option to database
         // push json to the body and write into database
         getNotes.push(req.body);
         writeToDB();
@@ -37,7 +44,9 @@ module.exports = function (app) {
     });
 
     function writeToDB() {
-        fs.writeFile("../db/db.json", JSON.stringify(getNotes, '\t'), err => {
+        //bring in path when writing to file
+        //windeows path.join
+        fs.writeFile(path.join(__dirname, "..", "db/db.json"), JSON.stringify(getNotes, '\t'), err => {
             if (err) throw err;
             return true;
         });
