@@ -6,7 +6,7 @@ To create an app accessable to anyone who wants to
 keep track of tasks by adding, saving, and tracking tasks.
 ![SCREENSHOT OF notes saved](public/assets/images/saving-notes.png)
 
-"AS A small business owner 
+"AS A small business  owner  (or any one really)
 I WANT to be able to write and save notes <br>
 SO THAT I can organize my thoughts 
 and keep track of tasks I need to complete"
