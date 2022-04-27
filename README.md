@@ -4,14 +4,16 @@
 ## Purpose
 To create an app accessable to anyone who wants to
 keep track of tasks by adding, saving, and tracking tasks.
+![SCREENSHOT OF notes saved](public/assets/images/saving-notes.png)
 
 "AS A small business owner 
 I WANT to be able to write and save notes <br>
 SO THAT I can organize my thoughts 
 and keep track of tasks I need to complete"
 
-![SCREENSHOT OF 'NOTED' FRONT PAGE](images/noted-first-page.png)
-![SCREENSHOT OF notes created](images/NOTES-2.png)
+![SCREENSHOT OF 'NOTED' FRONT PAGE](public/assets/images/front-page.png)
+![SCREENSHOT OF notes.html no notes](public/assets/images/no-notes.png)
+![SCREENSHOT OF notes deleted](public/assets/images/delete-notes.png)
 
    ## Table of Contents::mag:
    1. [ Installation ](#installation)
@@ -35,6 +37,9 @@ and keep track of tasks I need to complete"
      ```
      
      In addition to running installation, the server.js was run with 'node server' to GET, POST and delete API calls. These routes called for the data and returned  json to the body and wrote into the database.
+     At first the file paths were off, like an extra 's' in style.css so it wouldn't import the styles.
+     The routes JS file called for id so I had to add 'id' to the db.json file to call 1, 2, 3, so on. Then the notes started to show under the saved column. Windows wouldn't get the path for the database file db.json so the code for Windows only worked with 
+     (path.join(__dirname, "..", "db/db.json")).
     
     The HTML routes called for the GET requests to index.html and notes.html. Index.js created all the functions, query selectors and calls for adding, saving, and deleting new notes. It also handles saving and deleting the notes by the buttons and thier corresponding icon in top right of the notes.html page.
 
