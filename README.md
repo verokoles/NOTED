@@ -3,7 +3,7 @@
   [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 ## Purpose
 To create an app accessable to anyone who wants to
-keep track of tasks by adding, saving, and tracking tasks.
+keep track of tasks by adding, saving, and deleting tasks.
 ![SCREENSHOT OF notes saved](public/assets/images/saving-notes.png)
 
 "AS A small business  owner  (or any one really)
